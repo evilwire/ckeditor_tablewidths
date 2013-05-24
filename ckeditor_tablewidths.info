@@ -1,0 +1,5 @@
+name = CKEditor Table Widths
+description = Registers a CKEditor plugin that sets the default table widths to 100% instead of the normal value of 500px.
+package = User interface
+core = 7.x
+dependencies[] = ckeditor

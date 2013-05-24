@@ -1,0 +1,25 @@
+<?php
+/**
+ * An implementation of hook_ckeditor_plugin. This registers a plugin
+ * namespace 'tablewidths' with CKEDITOR object.
+ * 
+ */
+function ckeditor_tablewidths_ckeditor_plugin()
+{
+   return Array (
+      'ckeditor_tablewidths' => Array(
+         // name of the plugin
+         'name' => 'tablewidths',
+         
+         // description of the plugin (to be displayed on the ckeditor
+         // configuration form)
+         'desc' => t( 'CKEditor Tablewidths - A plugin that 
+                       sets the default table width to 100%
+                       instead of the default value of 500px' ),
+
+         // the path of the plugin.js file 
+         'path' => drupal_get_path( 'module', 'ckeditor_tablewidths' ) .
+                      '/plugins/tablewidths/',
+      )
+   );
+}
